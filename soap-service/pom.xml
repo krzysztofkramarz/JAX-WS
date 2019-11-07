@@ -6,10 +6,12 @@
         <artifactId>ws-service</artifactId>
         <groupId>com.fonowizja</groupId>
         <version>1.0-SNAPSHOT</version>
+
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>soap-service</artifactId>
+    <packaging>war</packaging>
 
     <build>
         <plugins>
@@ -33,6 +35,24 @@
                     </execution>
                 </executions>
             </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.2.3</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>war</goal>
+                    </goals>
+                </execution>
+            </executions>
+<!--            <configuration>-->
+<!--                <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>-->
+<!--            </configuration>-->
+        </plugin>
+
         </plugins>
     </build>
 

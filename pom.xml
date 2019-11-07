@@ -49,6 +49,7 @@
 
         <!--        SOAP-->
 
+<!--        to samo jest w JDK, ale tam Intellij nie widzi dokumetacji z jakichś powodów-->
         <!-- https://mvnrepository.com/artifact/javax.xml.ws/jaxws-com.fonowizja.api -->
         <dependency>
             <groupId>javax.xml.ws</groupId>
@@ -65,20 +66,19 @@
 
         <!--        java.lang.ClassNotFoundException: com.sun.xml.internal.ws.spi.ProviderImpl-->
         <!-- https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-ri -->
-        <!-- https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-ri -->
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>jaxws-ri</artifactId>
-            <version>2.3.2</version>
-            <type>pom</type>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.sun.xml.ws</groupId>-->
+<!--            <artifactId>jaxws-ri</artifactId>-->
+<!--            <version>2.3.2</version>-->
+<!--&lt;!&ndash;            <type>pom</type>&ndash;&gt;-->
+<!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt -->
+<!--         https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt-->
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-rt</artifactId>
             <version>2.3.2</version>
-            <type>pom</type>
+<!--            <type>pom</type>-->
         </dependency>
 
 
