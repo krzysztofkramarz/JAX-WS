@@ -8,16 +8,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getNextWorkingDay complex type.
+ * <p>Java class for getPerson complex type.
  *
  * <p>The following schema fragment specifies the expected content contained within this class.
  *
  * <pre>
- * &lt;complexType name="getNextWorkingDay">
+ * &lt;complexType name="getPerson">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="dataPoprzednia" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -25,32 +25,32 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getNextWorkingDay", propOrder = {
-        "dataPoprzednia"
+@XmlType(name = "getPerson", propOrder = {
+        "arg0"
 })
-public class GetNextWorkingDay {
+public class GetPerson {
 
     @XmlElement(namespace = "")
-    protected String dataPoprzednia;
+    protected Long arg0;
 
     /**
-     * Gets the value of the dataPoprzednia property.
+     * Gets the value of the arg0 property.
      *
      * @return possible object is
-     * {@link String }
+     * {@link Long }
      */
-    public String getDataPoprzednia() {
-        return dataPoprzednia;
+    public Long getArg0() {
+        return arg0;
     }
 
     /**
-     * Sets the value of the dataPoprzednia property.
+     * Sets the value of the arg0 property.
      *
      * @param value allowed object is
-     *              {@link String }
+     *              {@link Long }
      */
-    public void setDataPoprzednia(String value) {
-        this.dataPoprzednia = value;
+    public void setArg0(Long value) {
+        this.arg0 = value;
     }
 
 }

@@ -3,21 +3,20 @@ package com.fonowizja.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getNextWorkingDay complex type.
+ * <p>Java class for car complex type.
  *
  * <p>The following schema fragment specifies the expected content contained within this class.
  *
  * <pre>
- * &lt;complexType name="getNextWorkingDay">
+ * &lt;complexType name="car">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="dataPoprzednia" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -25,32 +24,31 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getNextWorkingDay", propOrder = {
-        "dataPoprzednia"
+@XmlType(name = "car", namespace = "http://www.example.org/package", propOrder = {
+        "name"
 })
-public class GetNextWorkingDay {
+public class Car {
 
-    @XmlElement(namespace = "")
-    protected String dataPoprzednia;
+    protected String name;
 
     /**
-     * Gets the value of the dataPoprzednia property.
+     * Gets the value of the name property.
      *
      * @return possible object is
      * {@link String }
      */
-    public String getDataPoprzednia() {
-        return dataPoprzednia;
+    public String getName() {
+        return name;
     }
 
     /**
-     * Sets the value of the dataPoprzednia property.
+     * Sets the value of the name property.
      *
      * @param value allowed object is
      *              {@link String }
      */
-    public void setDataPoprzednia(String value) {
-        this.dataPoprzednia = value;
+    public void setName(String value) {
+        this.name = value;
     }
 
 }

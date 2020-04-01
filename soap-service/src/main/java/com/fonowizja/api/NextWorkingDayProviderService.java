@@ -4,7 +4,6 @@ import com.fonowizja.api.model.Person;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
-import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 
@@ -17,12 +16,11 @@ import javax.jws.soap.SOAPBinding;
 @SOAPBinding(style = SOAPBinding.Style.DOCUMENT, use = SOAPBinding.Use.ENCODED) //nie działa encoded
 public interface NextWorkingDayProviderService {
 
+    //    @WebResult(name = "odpowiedzSerwisu", partName = "mojePartName") //nie działa @WebResult#name ani partName
+    //    @ResponseWrapper(localName = "owijka") //tworzy owijkę-element  "owijka", pewnie trzeba zdefiniować w targetNamespace
     @WebMethod(operationName = "mojaOperacja")
-//    @WebResult(targetNamespace = "namespaceForMyTargets")
-    @WebResult(name = "odpowiedzSerwisu")
-        //nie działa @WebResult#name ani partName
-//    @ResponseWrapper(localName = "owijka") //tworzy owijkę-element  "owijka", pewniw trzeba zdefiniować w targetNamespace
     String getNextWorkingDay(@WebParam(name = "dataPoprzednia") String previousDate);
 
-    Person getPerson(Long id);
+    @WebMethod
+    Person getPerson(Long id) throws IllegalArgumentException;
 }

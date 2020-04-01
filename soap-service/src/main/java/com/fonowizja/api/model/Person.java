@@ -68,4 +68,17 @@ public class Person {
     void afterMarshal(Marshaller marshaller) {
         System.out.println("After Marshaller Callback");
     }
+
+    @Override
+    public String toString() {
+        return "moj tostrin  Person{" +
+                "id=" + id +
+                ", personName='" + personName + '\'' +
+                ", personSurName='" + personSurName + '\'' +
+                ", birth=" + birth +
+                ", addresses=" + addresses +
+                ", cars=" + cars +
+                ", sportMap=" + sportMap +
+                '}';
+    }
 }

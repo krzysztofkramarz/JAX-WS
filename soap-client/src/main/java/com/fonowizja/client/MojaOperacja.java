@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getNextWorkingDay complex type.
+ * <p>Java class for mojaOperacja complex type.
  *
  * <p>The following schema fragment specifies the expected content contained within this class.
  *
  * <pre>
- * &lt;complexType name="getNextWorkingDay">
+ * &lt;complexType name="mojaOperacja">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -25,10 +25,10 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getNextWorkingDay", propOrder = {
+@XmlType(name = "mojaOperacja", propOrder = {
         "dataPoprzednia"
 })
-public class GetNextWorkingDay {
+public class MojaOperacja {
 
     @XmlElement(namespace = "")
     protected String dataPoprzednia;

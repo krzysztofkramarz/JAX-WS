@@ -27,6 +27,9 @@ public class NextWorkingDayProviderServiceImpl implements NextWorkingDayProvider
 
     @Override
     public Person getPerson(Long id) {
+        if (id < 0) {
+            throw new IllegalArgumentException();
+        }
         HashMap<String, Adres> adresHashMap = new HashMap<>();
         Adres domowy = new Adres();
         domowy.setUlica("Strażacka");
@@ -51,7 +54,7 @@ public class NextWorkingDayProviderServiceImpl implements NextWorkingDayProvider
         Sport sport = new Sport();
         sport.setGender("meskie");
         sport.setType("narty_biegowe");
-        //dajemy element zamist value
+        //dajemy element zamiast value
 //        sport.setDesription("Ten sport jest bardzo spokojny, a jednecześnie pomaga osiągnac silna kondycję");
         sport.setPunkty(23);
 

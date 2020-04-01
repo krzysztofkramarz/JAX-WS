@@ -8,16 +8,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getNextWorkingDay complex type.
+ * <p>Java class for mojaOperacjaResponse complex type.
  *
  * <p>The following schema fragment specifies the expected content contained within this class.
  *
  * <pre>
- * &lt;complexType name="getNextWorkingDay">
+ * &lt;complexType name="mojaOperacjaResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="dataPoprzednia" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -25,32 +25,32 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getNextWorkingDay", propOrder = {
-        "dataPoprzednia"
+@XmlType(name = "mojaOperacjaResponse", propOrder = {
+        "_return"
 })
-public class GetNextWorkingDay {
+public class MojaOperacjaResponse {
 
-    @XmlElement(namespace = "")
-    protected String dataPoprzednia;
+    @XmlElement(name = "return", namespace = "")
+    protected String _return;
 
     /**
-     * Gets the value of the dataPoprzednia property.
+     * Gets the value of the return property.
      *
      * @return possible object is
      * {@link String }
      */
-    public String getDataPoprzednia() {
-        return dataPoprzednia;
+    public String getReturn() {
+        return _return;
     }
 
     /**
-     * Sets the value of the dataPoprzednia property.
+     * Sets the value of the return property.
      *
      * @param value allowed object is
      *              {@link String }
      */
-    public void setDataPoprzednia(String value) {
-        this.dataPoprzednia = value;
+    public void setReturn(String value) {
+        this._return = value;
     }
 
 }
