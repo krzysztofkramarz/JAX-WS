@@ -12,6 +12,7 @@ import javax.jws.soap.SOAPBinding;
  */
 //@WebService(name = "NextWorkingDayPort", portName = "NextWorkingDayPort",
 //        serviceName = "NextWorkingDay") //serviceName nie działa, portName nie działa
+//    XSD definicję schematu XML*
 @WebService
 @SOAPBinding(style = SOAPBinding.Style.DOCUMENT, use = SOAPBinding.Use.ENCODED) //nie działa encoded
 public interface NextWorkingDayProviderService {
